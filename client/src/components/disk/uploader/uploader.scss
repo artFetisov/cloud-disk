@@ -1,0 +1,66 @@
+@import '../../../utils/variables.scss';
+
+.uploader {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  right: 0;
+  padding: 1.6em;
+  color: $white;
+  border-radius: 0.1em;
+  overflow-y: auto;
+  z-index: 1000;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    cursor: pointer;
+  }
+}
+
+.upload-file {
+  background-color: $white;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  margin-bottom: 0.4em;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1px;
+  }
+
+  &__close-icon {
+    cursor: pointer;
+  }
+
+  &__progress-bar {
+    height: 1rem;
+    background-color: $font_05;
+    border-radius: 0.3em;
+    margin: 0.4em 0;
+    display: flex;
+  }
+
+  &__upload-bar {
+    background-color: rgb(26, 177, 26);
+    border-radius: 0.3em;
+  }
+
+  &__percent {
+    position: absolute;
+    left: 45%;
+    color: $white;
+  }
+}

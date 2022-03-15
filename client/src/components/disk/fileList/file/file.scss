@@ -1,0 +1,109 @@
+@import '../../../../utils/variables.scss';
+
+.file {
+  display: grid;
+  margin: 20px 0;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 3px;
+  align-items: center;
+  font-size: 16px;
+
+  &:hover {
+    transform: scale(1.01);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  }
+
+  &__dir-icon {
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__date {
+    grid-column-start: 5;
+    justify-self: center;
+  }
+
+  &__size {
+    grid-column-start: 6;
+    justify-self: center;
+  }
+
+  &__download {
+    grid-column-start: 3;
+    justify-self: center;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 1px 10px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &-icon {
+      margin: 3px;
+    }
+  }
+
+  &__delete {
+    grid-column-start: 4;
+    justify-self: center;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: $white;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 1px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &-icon {
+      margin: 3px;
+    }
+  }
+}
+
+.file-plate {
+  margin: 2em auto;
+  width: 8em;
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.4em;
+  &:hover {
+    display: flex;
+    transform: scale(1.01);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &__dir-icon {
+    color: rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__name {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

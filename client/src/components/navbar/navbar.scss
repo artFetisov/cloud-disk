@@ -1,0 +1,105 @@
+@import '../../utils/variables.scss';
+
+.navbar {
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  color: $font_05;
+  background-color: $back_004;
+  width: 100%;
+  font-weight: 400;
+  box-shadow: 0 1px 9px $font_05;
+
+  a {
+    color: #4471e5;
+    text-decoration: none;
+  }
+
+  &__header {
+    margin-left: 18px;
+    font-size: 22px;
+    margin-right: 18px;
+
+    font-weight: 400;
+
+    a {
+      color: #4471e5;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__search {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    border: none;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 12px 15px;
+
+    &::placeholder {
+      color: $font_05;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__login {
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 22px;
+    a {
+      color: $font_05;
+      &:hover {
+        color: $a-hover;
+      }
+    }
+  }
+
+  &__registration {
+    font-size: 22px;
+
+    a {
+      color: $font_05;
+      &:hover {
+        color: $a-hover;
+      }
+    }
+  }
+
+  &__logout {
+    margin-right: 22px;
+    font-size: 22px;
+    color: $font_05;
+
+    &:hover {
+      color: $a-hover;
+      cursor: pointer;
+    }
+  }
+
+  &__avatar {
+    color: $font_05;
+    margin: auto 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+}
